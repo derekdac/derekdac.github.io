@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ page.title }} | {{ site.title }}</title>
+
+	<link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C700italic%2C400%2C700%2C300&amp;subset=latin%2Ccyrillic-ext">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text%3A400%2C700%2C400italic%2C700italic">
+
+</head>
+
+<body>
+
+	<nav id="navigation">
+
+		<div class="container">
+
+			<div id="navigation-wrapper">
+			<ul id="menu-main" class="menu">
+				<li><a href="{{ "/" | prepend: site.baseurl }}">Derek Christensen</a></li>
+				<li><a href="{{ "/about/" | prepend: site.baseurl }}">About</a></li>
+			</ul>
+			</div>
+
+			<div class="menu-mobile"></div>
+
+		</div>
+
+	</nav>
+
+	<header id="header">
+
+		<div class="container">
+
+			<div id="logo">
+
+				<h1><a href="{{ "/" | prepend: site.baseurl }}"><img src="/wp-content/uploads/2015/02/derekchristensenlogo1.png" alt="Derek Christensen"></a></h1>
+
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<div class="container ">
+
+	<div id="main">
+
+		{{ content }}
+
+	</div>
+
+	</div>
+
+		<div id="footer-social">
+
+		<div class="container">
+
+				<a href="http://twitter.com/derekdac" target="_blank"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+				<a href="http://www.derekchristensen.com/feed" target="_blank"><i class="fa fa-rss"></i> <span>RSS</span></a>
+		</div>
+
+	</div>
+
+		<div id="footer-logo">
+
+		<div class="container">
+
+							<img src="/wp-content/uploads/2015/02/derekchristensenwhite.png" alt="Derek Christensen">
+
+
+		</div>
+
+	</div>
+
+	<footer id="footer-copyright">
+
+		<div class="container">
+
+							<p>&copy; {{ 'now' | date: "%Y" }} Derek Christensen</p>
+						<a href="#" class="to-top">Back to top <i class="fa fa-angle-double-up"></i></a>
+
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/jquery-migrate.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/jquery.bxslider.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/fitvids.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/jquery.slicknav.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/owl.carousel.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/retina.min.js" | prepend: site.baseurl }}"></script>
+	<script type="text/javascript" src="{{ "/js/solopine.js" | prepend: site.baseurl }}"></script>
+
+</body>
+
+</html>
